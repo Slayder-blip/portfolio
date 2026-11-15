@@ -1,0 +1,24 @@
+.site-header {
+  position: fixed;
+  z-index: 10;
+  top: 2rem;
+  left: 5%;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  background: rgb(30 28 30 / 33%);
+  backdrop-filter: blur(7px);
+}
+.site-header__logo {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 300;
+  white-space: nowrap;
+}
+.site-header__navigation { display: flex; align-items: center; gap: clamp(1rem, 4vw, 4rem); }
+.site-header__link { transition: text-shadow 180ms ease; }
+.site-header__link:hover { text-shadow: 0 0 5px var(--color-text); }
