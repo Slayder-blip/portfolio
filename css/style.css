@@ -170,6 +170,7 @@ a:focus-visible, button:focus-visible {
   width: min(30vw, 420px);
   max-height: 65vh;
   object-fit: contain;
+  border-radius: 24px;
 }
 
 .projects-section {
@@ -490,11 +491,11 @@ a:focus-visible, button:focus-visible {
     transform: translate3d(-50%, 0, 0);
   }
 }
-/* PAUSE AU SURVOL */
+/* PAUSE AU SURVOL 
 .project-detail__images:hover .project-detail__track {
   animation-play-state: paused;
 }
-
+  */
 /* ACCESSIBILITÉ */
 @media (prefers-reduced-motion: reduce) {
   .project-detail__images {

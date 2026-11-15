@@ -100,10 +100,11 @@
   }
 }
 
-/* PAUSE AU SURVOL */
+/* PAUSE AU SURVOL 
 .project-detail__images:hover .project-detail__track {
   animation-play-state: paused;
 }
+  */
 
 /* ACCESSIBILITÉ */
 @media (prefers-reduced-motion: reduce) {
