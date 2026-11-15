@@ -151,6 +151,10 @@ a:focus-visible, button:focus-visible {
   justify-content: center;
   gap: 5vw;
   padding: 8rem 8vw;
+  background-image: url("../assets/images/bg-section-1.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .about__content {
@@ -167,7 +171,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .about__image {
-  width: min(30vw, 420px);
+  width: min(30vw, 320px);
   max-height: 65vh;
   object-fit: contain;
   border-radius: 24px;
@@ -194,8 +198,13 @@ a:focus-visible, button:focus-visible {
 }
 
 .contact {
+  height: 100vh;
   padding: 7rem 8vw;
   text-align: center;
+  background-image: url("../assets/images/bg-section-1.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .contact .section-title {
@@ -210,6 +219,10 @@ a:focus-visible, button:focus-visible {
 .site-footer__text {
   font-size: 0.85rem;
   color: var(--color-muted);
+}
+
+.contact h2 {
+  margin-top: 8rem;
 }
 
 .project-filters {
