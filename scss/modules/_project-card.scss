@@ -1,6 +1,6 @@
 .project-gallery {
   columns: 3;
-  column-gap: 25px;
+  column-gap: 40px;
   width: 100%;
   max-width: none;
   margin: 0;
@@ -9,11 +9,12 @@
 .project-card {
   display: inline-block;
   width: 100%;
-  margin: 0 0 25px;
+  margin: 0 0 40px;
   overflow: hidden;
   vertical-align: top;
   break-inside: avoid;
   background: transparent;
+  border-radius: 8px;
 }
 
 .project-card__image {
@@ -27,7 +28,7 @@
 
 .project-card:hover .project-card__image,
 .project-card:focus-visible .project-card__image {
-  transform: scale(1.035);
+  transform: scale(1.025);
 }
 
 .project-card[hidden] {
@@ -51,3 +52,17 @@
     columns: 1;
   }
 }
+
+
+/*
+
+effet de flou quand survol sur une image
+
+.project-gallery:hover .project-card__image {
+  filter: blur(3px);
+}
+
+.project-card:hover .project-card__image {
+  filter: blur(0);
+}
+  */

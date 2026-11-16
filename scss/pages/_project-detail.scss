@@ -60,12 +60,12 @@
 
 .project-detail__image {
   display: block;
-  flex: 0 0 auto;
   width: auto;
   height: 100%;
-  max-width: 80vw;
+  max-width: 60vw;
   object-fit: contain;
-  border-radius: 8px; /* Optionnel : adoucit les bords */
+  border-radius: 8px;
+  margin: 0 auto;
 }
 
 .project-detail__sideimage {
@@ -75,7 +75,7 @@
   height: auto;
   max-width: 80vw;
   object-fit: contain;
-  border-radius: 8px; /* Optionnel : adoucit les bords */
+  border-radius: 8px;
 }
 
 .project-detail__imgtxt {

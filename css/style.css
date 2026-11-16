@@ -182,7 +182,7 @@ a:focus-visible, button:focus-visible {
   z-index: 1;
   isolation: isolate;
   min-height: 100vh;
-  padding: 7rem 8px 6rem;
+  padding: 7rem 40px 6rem;
   color: var(--color-text);
   background: var(--color-background);
 }
@@ -250,7 +250,7 @@ a:focus-visible, button:focus-visible {
 
 .project-gallery {
   columns: 3;
-  column-gap: 25px;
+  column-gap: 40px;
   width: 100%;
   max-width: none;
   margin: 0;
@@ -259,11 +259,12 @@ a:focus-visible, button:focus-visible {
 .project-card {
   display: inline-block;
   width: 100%;
-  margin: 0 0 25px;
+  margin: 0 0 40px;
   overflow: hidden;
   vertical-align: top;
   break-inside: avoid;
   background: transparent;
+  border-radius: 8px;
 }
 
 .project-card__image {
@@ -277,7 +278,7 @@ a:focus-visible, button:focus-visible {
 
 .project-card:hover .project-card__image,
 .project-card:focus-visible .project-card__image {
-  transform: scale(1.035);
+  transform: scale(1.025);
 }
 
 .project-card[hidden] {
@@ -299,6 +300,18 @@ a:focus-visible, button:focus-visible {
     columns: 1;
   }
 }
+/*
+
+effet de flou quand survol sur une image
+
+.project-gallery:hover .project-card__image {
+  filter: blur(3px);
+}
+
+.project-card:hover .project-card__image {
+  filter: blur(0);
+}
+  */
 .contact__text {
   margin-bottom: 1.5rem;
 }
@@ -474,12 +487,12 @@ a:focus-visible, button:focus-visible {
 
 .project-detail__image {
   display: block;
-  flex: 0 0 auto;
   width: auto;
   height: 100%;
-  max-width: 80vw;
+  max-width: 60vw;
   object-fit: contain;
-  border-radius: 8px; /* Optionnel : adoucit les bords */
+  border-radius: 8px;
+  margin: 0 auto;
 }
 
 .project-detail__sideimage {
@@ -489,7 +502,7 @@ a:focus-visible, button:focus-visible {
   height: auto;
   max-width: 80vw;
   object-fit: contain;
-  border-radius: 8px; /* Optionnel : adoucit les bords */
+  border-radius: 8px;
 }
 
 .project-detail__imgtxt {
